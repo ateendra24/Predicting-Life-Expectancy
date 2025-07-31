@@ -2,22 +2,43 @@
 
 This project utilizes IBM Watson Studio's AutoAI capabilities to analyze a global Life Expectancy dataset. The objective is to automatically preprocess the data, select relevant features, train multiple machine learning models, and identify the best-performing pipeline for predicting life expectancy. AutoAI streamlines the process by handling data cleaning, algorithm selection, and hyperparameter optimization. The final model is evaluated for accuracy and deployed as a REST API for real-time predictions.
 
-## 🎯 Project Overview
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Presentation Link](#presentation-link)
+- [Demo Video](#demo-video)
+- [Interactive Web Interface](#interactive-web-interface)
+- [Dataset Features](#dataset-features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Model Pipeline](#model-pipeline)
+- [Results](#results)
+- [Deployment](#deployment)
+- [Screenshots](#screenshots)
+- [Key Features](#key-features)
+- [Configuration](#configuration)
+- [Usage Instructions](#usage-instructions)
+- [License](#license)
+
+## Project Overview
 
 The project focuses on predicting life expectancy based on various health, social, and economic factors across different countries. Using IBM Watson Studio's AutoAI, we automatically generate and compare multiple machine learning pipelines to find the optimal solution for this regression problem.
+
+## Presentation Link
+[Presentation](https://drive.google.com/file/d/17x-gFpMsDVj1zY_q_3j_4Efp_JLgstDs/view?usp=sharing "Presentation")
 
 ## Demo Video
 [Demo Video](https://drive.google.com/file/d/1wnATCC5DFYS7TK-qTcnRFwn1ZQEFPrCK/view?usp=sharing "Demo Video")
 
 
-### 🌍 Interactive Web Interface
+### Interactive Web Interface
 
 For easy access to life expectancy predictions without technical knowledge, we provide a user-friendly web interface:
 
 **🔗 [Life Expectancy Predictor Web App](https://life-expectancy-prediction-green.vercel.app)**
 
 
-## 📊 Dataset Features
+## Dataset Features
 
 The dataset includes the following key features for life expectancy prediction:
 
@@ -42,7 +63,7 @@ The dataset includes the following key features for life expectancy prediction:
 - **Income Composition of Resources**: Human Development Index in terms of income composition of resources
 - **Schooling**: Number of years of schooling
 
-## 🔧 Technology Stack
+## Technology Stack
 
 - **IBM Watson Studio**: AutoAI platform for automated machine learning
 - **Python 3.11**: Primary programming language
@@ -52,11 +73,13 @@ The dataset includes the following key features for life expectancy prediction:
 - **Pandas**: Data manipulation and analysis
 - **NumPy**: Numerical computing
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 project/
 ├── _P4 - LGBM Regressor_ Predicting Life Expectancy.ipynb  # Main notebook
+├── Demo.mp4
+├── Presentation.pptx
 ├── README.md                                                # Project documentation
 └── screenshots/                                            # Project screenshots
     ├── 1. Reading Dataset.png
@@ -67,7 +90,7 @@ project/
     └── 6. API EndPoint.png
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -102,7 +125,7 @@ pip install lightgbm==4.2.*
    - Set appropriate CPU count for parallel processing
    - Configure memory and computational resources
 
-## 📈 Model Pipeline
+## Model Pipeline
 
 The AutoAI pipeline includes the following stages:
 
@@ -126,7 +149,7 @@ The AutoAI pipeline includes the following stages:
 - **Cross-validation**: Automated validation strategy
 - **Holdout Testing**: 10% of data reserved for final evaluation
 
-## 📊 Results
+## Results
 
 The final LightGBM model demonstrates strong performance in predicting life expectancy:
 
@@ -135,7 +158,7 @@ The final LightGBM model demonstrates strong performance in predicting life expe
 - **Holdout Split**: 90% training, 10% testing
 - **Feature Engineering**: Automated with square root transformations and feature combinations
 
-## 🌐 Deployment
+## Deployment
 
 The trained model can be deployed as a REST API endpoint:
 
@@ -188,7 +211,7 @@ The web interface includes user-friendly forms for all 20 model features:
 - Social metrics (education years, income composition)
 - Demographic data (population, age-specific health metrics)
 
-## 📸 Screenshots
+## Screenshots
 
 The `screenshots/` directory contains visual documentation of the project workflow:
 
@@ -201,7 +224,7 @@ The `screenshots/` directory contains visual documentation of the project workfl
 
 ![Pipelines.png](screenshots/3.%20Pipelines.png "Pipelines.png")
 
-## 🔍 Key Features
+## Key Features
 
 - **Automated ML Pipeline**: Complete automation from data preprocessing to model deployment
 - **Feature Engineering**: Intelligent feature creation and selection
@@ -210,7 +233,7 @@ The `screenshots/` directory contains visual documentation of the project workfl
 - **Production Ready**: Direct deployment to Watson ML for real-time predictions
 - **Scalable Architecture**: Configurable for different computational resources
 
-## 🛠️ Configuration
+## Configuration
 
 The notebook is configured with the following settings:
 
@@ -219,7 +242,7 @@ The notebook is configured with the following settings:
 - **Scoring Strategy**: Cross-validation with holdout testing
 - **Pipeline Optimization**: Multiple algorithms compared automatically
 
-## 📚 Usage Instructions
+## Usage Instructions
 
 1. **Open the Notebook**: Launch `_P4 - LGBM Regressor_ Predicting Life Expectancy.ipynb`
 2. **Setup Credentials**: Enter your IBM Cloud API key when prompted
@@ -230,7 +253,7 @@ The notebook is configured with the following settings:
 
 
 
-## 📄 License
+## License
 
 This project is subject to IBM Watson Studio licensing terms and the International License Agreement for Non-Warranted Programs.
 
